@@ -4,12 +4,14 @@
   "description": "Unofficial yandex music desktop client",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . --platform=darwin --arch=x64"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "author": "Denis Zyulev",
   "license": "MIT",
   "devDependencies": {
-    "electron": "~1.8.2"
+    "electron": "^1.8.2",
+    "electron-packager": "^11.0.1"
   }
 }
