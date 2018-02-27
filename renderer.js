@@ -1,3 +1,19 @@
-// This file is required by the index.html file and will
-// be executed in the renderer process for that window.
-// All of the Node.js APIs are available in this process.
+const electron = require('electron');
+const ipc      = electron.ipcRenderer;
+const embed    = document.querySelector('.view');
+
+ipc.on('media-next-track', () => {
+  embed.executeJavaScript(`externalAPI.next()`);
+});
+
+ipc.on('media-prev-track', () => {
+  embed.executeJavaScript(`externalAPI.prev()`);
+});
+
+ipc.on('media-stop', () => {
+  embed.executeJavaScript(`externalAPI.stop()`);
+});
+
+ipc.on('media-play-pause', () => {
+  embed.executeJavaScript(`externalAPI.togglePause()`);
+});
