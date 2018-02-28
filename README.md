@@ -1,11 +1,6 @@
 # Yandex music desktop client (unofficial)
 
----
-
 ![yandex music desktop client screenshot](https://github.com/jet8a/yandex-music-desktop-client/blob/master/images/screenshot.jpg?raw=true "YAM screenshot")
-
-
----
 
 ## To Use
 
