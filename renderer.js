@@ -3,6 +3,9 @@ const ipc      = electron.ipcRenderer
 const webview  = document.querySelector('.view')
 
 webview.addEventListener('dom-ready', () => {
+
+  webview.openDevTools()
+
   webview.insertCSS(`
     .layout_narrow .centerblock-wrapper {
       margin-right: 0 !important;
@@ -10,6 +13,10 @@ webview.addEventListener('dom-ready', () => {
 
     .bar-below {
       display: none;
+    }
+
+    .d-overhead {
+      display: none !important;
     }
   `)
 })
@@ -27,5 +34,7 @@ ipc.on('media-stop', () => {
 })
 
 ipc.on('media-play-pause', () => {
-  webview.executeJavaScript(`externalAPI.togglePause()`)
+  webview.executeJavaScript(`externalAPI.togglePause()`, () => {
+    console.log(12312312);
+  })
 })

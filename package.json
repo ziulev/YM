@@ -1,17 +1,27 @@
 {
   "name": "yandex-music-desktop-app",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Unofficial yandex music desktop client",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-packager . --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/electron/electron-quick-start.git"
+  },
   "author": "Denis Zyulev",
   "license": "MIT",
   "devDependencies": {
     "electron": "^1.8.2",
     "electron-packager": "^11.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/electron/electron-quick-start/issues"
+  },
+  "homepage": "https://github.com/electron/electron-quick-start#readme",
+  "dependencies": {
+    "node-notifier": "^5.2.1"
   }
 }
