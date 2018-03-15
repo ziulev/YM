@@ -4,7 +4,7 @@ const webview  = document.querySelector('.view')
 
 webview.addEventListener('dom-ready', () => {
 
-  webview.openDevTools()
+  // webview.openDevTools()
 
   webview.insertCSS(`
     .layout_narrow .centerblock-wrapper {
@@ -34,7 +34,5 @@ ipc.on('media-stop', () => {
 })
 
 ipc.on('media-play-pause', () => {
-  webview.executeJavaScript(`externalAPI.togglePause()`, () => {
-    console.log(12312312);
-  })
+  webview.executeJavaScript(`externalAPI.togglePause()`)
 })

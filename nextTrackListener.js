@@ -5,8 +5,6 @@ var notifier = new NotificationCenter({
   // customPath: './assets/icons/mac/icon.icns'
 });
 
-
-
 document.addEventListener('DOMSubtreeModified', (event) => {
 
   const trackTitle = event.target.querySelector('.track__title')
