@@ -6,13 +6,13 @@
 
 | OS             | Version       | Link                                       |
 | -------------- |:-------------:| :----------------------------------------: |
-| macOS          | 0.0.1         | [download](/builds/mac/0.0.1.zip?raw=true) |
+| macOS          | 0.0.2         | [download](/builds/mac/0.0.2.zip?raw=true) |
 | linux (soon)   | -             | -                                          |
 | windows (soon) | -             | -                                          |
 
 ## Features
 * Support global keys (play, preview, next)
-* Desktop notifications (soon)
+* Desktop notifications
 
 ## To develop
 
