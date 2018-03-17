@@ -1,11 +1,12 @@
 {
-  "name": "yandex-music-desktop-app",
+  "name": "Yandex.music",
   "version": "0.0.2",
   "description": "Unofficial yandex music desktop client",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns"
+    "build": "electron-packager . --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns",
+    "rebuild": "electron-rebuild"
   },
   "repository": {
     "type": "git",
@@ -15,7 +16,9 @@
   "license": "MIT",
   "devDependencies": {
     "electron": "^1.8.2",
-    "electron-packager": "^11.0.1"
+    "electron-packager": "^11.0.1",
+    "electron-prebuilt": "^1.4.13",
+    "electron-rebuild": "^1.7.3"
   },
   "bugs": {
     "url": "https://github.com/electron/electron-quick-start/issues"
