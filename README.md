@@ -4,11 +4,11 @@
 
 ## To Use
 
-| OS             | Version       | Link                                       |
-| -------------- |:-------------:| :----------------------------------------: |
-| macOS          | 0.0.3         | [download](https://yadi.sk/d/ijt3r0oW3TjkQL) |
-| linux (soon)   | -             | -                                          |
-| windows (soon) | -             | -                                          |
+| OS             | Version       | Link                                                                    |
+| -------------- |:-------------:| :---------------------------------------------------------------------: |
+| macOS          | 0.0.3         | <a href="https://yadi.sk/d/ijt3r0oW3TjkQL" target="_blank">download</a> |
+| linux (soon)   | -             | -                                                                       |
+| windows (soon) | -             | -                                                                       |
 
 ## Features
 * Support global keys (play, preview, next)
