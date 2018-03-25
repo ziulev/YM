@@ -2,26 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Yandex music</title>
-    <style>
-      html, body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-      .view {
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <title>Yandex.music</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <webview class="view" src="https://music.yandex.ru/" preload="./nextTrackListener.js" allowpopups></webview>
-
-    <script>
-      require('./renderer.js')
-    </script>
+    <webview class="view" src="https://music.yandex.ru/" preload="nextTrackListener.js" allowpopups></webview>
+    <script src="renderer.js"></script>
   </body>
 </html>
