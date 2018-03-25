@@ -1,8 +1,8 @@
-const NotificationCenter = require('node-notifier').NotificationCenter;
+const NotificationCenter = require('node-notifier').NotificationCenter
 
 const notifier = new NotificationCenter({
   withFallback: false,
-});
+})
 
 document.addEventListener('DOMSubtreeModified', (event) => {
 
@@ -27,8 +27,8 @@ document.addEventListener('DOMSubtreeModified', (event) => {
           externalAPI.next()
         }
       }
-    );
+    )
 
   }
 
-}, false);
+}, false)

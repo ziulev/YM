@@ -1,18 +1,17 @@
-const electron = require('electron')
-const Config = require('electron-config')
-
-const app = electron.app
-const config = new Config()
-
-const BrowserWindow = electron.BrowserWindow
-const globalShortcut = electron.globalShortcut;
-
-const path = require('path')
-const url = require('url')
+const electron       = require('electron')
+const Config         = require('electron-config')
+const path           = require('path')
+const url            = require('url')
+const menu           = require('./app/js/menu')
+const window         = require('./app/js/window')
+const config         = new Config()
+const app            = electron.app
+const BrowserWindow  = electron.BrowserWindow
+const globalShortcut = electron.globalShortcut
 
 let mainWindow
 
-function createWindow () {
+const createWindow = () => {
   mainWindow = new BrowserWindow(config.get('windowBounds') || {width: 800, height: 600})
 
   mainWindow.loadURL(url.format({
@@ -21,20 +20,23 @@ function createWindow () {
     slashes: true
   }))
 
+  menu.init()
+  window.init(mainWindow)
+
   globalShortcut.register('MediaNextTrack', () => {
-    mainWindow.webContents.send('media-next-track')
+    window.next()
   })
 
   globalShortcut.register('MediaPreviousTrack', () => {
-    mainWindow.webContents.send('media-prev-track')
+    window.prev()
   })
 
   globalShortcut.register('MediaStop', () => {
-    mainWindow.webContents.send('media-stop')
+    window.stop()
   })
 
   globalShortcut.register('MediaPlayPause', () => {
-    mainWindow.webContents.send('media-play-pause')
+    window.togglePause()
   })
 
   // Open the devtools
@@ -65,4 +67,3 @@ app.on('activate', function () {
     createWindow()
   }
 })
-

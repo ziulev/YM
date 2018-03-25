@@ -22,18 +22,18 @@ webview.addEventListener('dom-ready', () => {
   `)
 })
 
-ipc.on('media-next-track', () => {
+ipc.on('next', () => {
   webview.executeJavaScript(`externalAPI.next()`)
 })
 
-ipc.on('media-prev-track', () => {
+ipc.on('prev', () => {
   webview.executeJavaScript(`externalAPI.prev()`)
 })
 
-ipc.on('media-stop', () => {
+ipc.on('stop', () => {
   webview.executeJavaScript(`externalAPI.stop()`)
 })
 
-ipc.on('media-play-pause', () => {
+ipc.on('toggle-pause', () => {
   webview.executeJavaScript(`externalAPI.togglePause()`)
 })
