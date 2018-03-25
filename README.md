@@ -1,6 +1,6 @@
 # Yandex music desktop client (unofficial)
 
-![yandex music desktop client screenshot](/screenshots/1.jpg?raw=true)
+![yandex music desktop client screenshot](/screenshots/1.png?raw=true)
 
 ## To Use
 
@@ -13,6 +13,7 @@
 ## Features
 * Support global keys (play, preview, next)
 * Desktop notifications
+* Menu bar controls
 
 ## To develop
 
@@ -36,7 +37,7 @@ npm run build:mac
 ```
 
 
-## How to Contribute
+## To Contribute
 
 1. [Fork the repo](https://github.com/jet8a/YM/fork)
 2. Create a branch in your repo with a descriptive name
