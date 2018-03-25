@@ -16,7 +16,7 @@ function createWindow () {
   mainWindow = new BrowserWindow(config.get('windowBounds') || {width: 800, height: 600})
 
   mainWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, '/app/index.html'),
     protocol: 'file:',
     slashes: true
   }))
@@ -37,7 +37,7 @@ function createWindow () {
     mainWindow.webContents.send('media-play-pause')
   })
 
-  // Open the DevTools.
+  // Open the devtools
   // mainWindow.webContents.openDevTools()
 
   // Save window size and position.

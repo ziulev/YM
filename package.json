@@ -1,11 +1,11 @@
 {
   "name": "Yandex.music",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Unofficial yandex music desktop client",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns",
+    "build:mac": "electron-packager . --platform=darwin --arch=x64 --icon=app/icons/mac/icon.icns",
     "rebuild": "electron-rebuild"
   },
   "repository": {

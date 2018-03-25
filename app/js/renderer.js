@@ -4,6 +4,7 @@ const webview  = document.querySelector('.view')
 
 webview.addEventListener('dom-ready', () => {
 
+  // Open the Yandex.music devtools
   // webview.openDevTools()
 
   webview.insertCSS(`

@@ -20,19 +20,19 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/jet8a/yandex-music-desktop-client
+git clone https://github.com/jet8a/YM
 
 # Go into the repository
-cd yandex-music-desktop-client
+cd YM
 
 # Install dependencies
-npm install
+npm i
 
 # Run the app to development
 npm start
 
 # Build the app for macOS
-npm build
+npm run build:mac
 ```
 
 
