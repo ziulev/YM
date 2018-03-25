@@ -6,7 +6,7 @@
 
 | OS             | Version       | Link                                       |
 | -------------- |:-------------:| :----------------------------------------: |
-| macOS          | 0.0.2         | [download](/builds/mac/0.0.2.zip?raw=true) |
+| macOS          | 0.0.3         | [download](https://yadi.sk/d/ijt3r0oW3TjkQL) |
 | linux (soon)   | -             | -                                          |
 | windows (soon) | -             | -                                          |
 
