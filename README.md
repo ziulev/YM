@@ -1,7 +1,5 @@
 # Yandex music desktop client (unofficial)
 
-![yandex music desktop client screenshot](/screenshots/1.png?raw=true)
-
 ## To Use
 
 | OS             | Version       | Link                                                                    |
@@ -10,10 +8,15 @@
 | linux (soon)   | -             | -                                                                       |
 | windows (soon) | -             | -                                                                       |
 
+
+<a href="https://github.com/jet8a/YM/releases" target="_blank">All releases</a>
+
 ## Features
 * Support global keys (play, preview, next)
 * Desktop notifications
 * Menu bar controls
+
+![yandex music desktop client screenshot](/screenshots/1.png?raw=true)
 
 ## To develop
 
@@ -44,3 +47,7 @@ npm run build:mac
 3. Code your fix
 4. [Create a pull request](https://github.com/jet8a/YM/compare)
 5. Await response from the maintainers!
+
+## License
+
+MIT
